@@ -13,10 +13,7 @@ This folder contains a publicly shareable version of my resume, prepared for dis
 
 ## What Has Been Redacted
 
-The following personally identifiable information has been removed from the public version to protect privacy:
-
 - **Phone number**: Not included; contact via email or LinkedIn instead
-- **Full middle name**: Shortened from "Adam Paul Skriver" to "Adam Skriver" for brevity
 
 ## Public Contact Information
 
