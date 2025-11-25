@@ -1,0 +1,235 @@
+%-------------------------
+% Resume in Latex
+% Author : Adam Skriver
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\vfill
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Adam Skriver} \\ \vspace{1pt}
+    \small \href{https://nineriver.ca}{\underline{nineriver.ca}} $|$
+    \href{https://www.linkedin.com/in/adam-skriver/}{\underline{LinkedIn}} \\
+    Calgary, AB, Canada
+\end{center}
+
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    Systems Specialist with 17+ years experience bridging the gap between complex technical infrastructure and business goals. Expert in Data \& Application Enablement, transforming legacy workflows into efficient, automated systems (Windchill PLM, AWS/Hybrid Cloud). Proven track record of leading cross-functional teams, translating technical requirements for non-technical stakeholders, and driving user adoption. Passionate about data governance and process automation, seeking to leverage deep expertise in systems integration to enable team success at a forward-thinking organization.
+    }}
+  \end{itemize}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {DeVry University}{Calgary, AB}
+      {Bachelor of Science in Electronics Engineering Technology}{Aug. 2000 -- Oct. 2003}
+      \resumeItemListStart
+        \resumeItem{Applied technical degree focused on systems integration, control systems, and practical implementation}
+        \resumeItem{Core studies: Critical Thinking, Systems Design, Circuit Design, Control Systems, Signal Processing, Digital Systems, Technical Communication, Systems Administration}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Principal Consultant / Infrastructure Systems Architect}{Nov. 2024 -- Present}
+      {NineRiver Technologies}{Calgary, AB}
+      \resumeItemListStart
+        \resumeItem{Architected a secure, cloud-agnostic hybrid network connecting Vultr edge nodes and on-premise Proxmox clusters via a WireGuard mesh VPN, ensuring data sovereignty and low-latency access.}
+        \resumeItem{Designed modular infrastructure strategies to avoid vendor lock-in, evaluating Azure and AWS ecosystems to advise on cost-optimized, flexible deployment patterns.}
+        \resumeItem{Defining Infrastructure-as-Code (Terraform) roadmaps to transition manual configurations into reusable modules, establishing standards for state management and disaster recovery.}
+        \resumeItem{Building data-driven monitoring solutions (Prometheus/Grafana) to provide visibility into system health, enabling proactive maintenance rather than reactive support.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Electronic Engineering Technologist}{Oct. 2007 -- Dec. 2024}
+      {Laversab Inc.}{Houston, TX / Remote}
+      \resumeItemListStart
+        \resumeItem{Leveraged enterprise PLM tools (Windchill) to manage complex aviation test equipment configurations, ensuring strict adherence to data governance and regulatory standards.}
+        \resumeItem{Collaborated across electrical, firmware, and mechanical teams to integrate diverse technical requirements into the PLM environment, resolving design conflicts to maintain project schedules.}
+        \resumeItem{Maintained data integrity for product specifications and change orders (ECOs), ensuring accurate documentation throughout the product lifecycle.}
+        \resumeItem{Adapted complex engineering workflows to fit within established system constraints, troubleshooting integration issues to ensure successful product data management.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Co-Owner \& Technical Systems Lead}{Jan. 2010 -- Apr. 2022}
+      {Coastal Cake Company}{Vancouver Island, BC}
+      \resumeItemListStart
+        \resumeItem{Built integrated business systems connecting Google Workspace, Lightspeed POS, QuickBooks, and Squarespace while maintaining full-time engineering role}
+        \resumeItem{Developed ETL workflows and automated data pipelines for order processing, inventory management, and financial reporting}
+        \resumeItem{Implemented data quality validation ensuring accuracy of customer orders, inventory levels, and financial transactions}
+        \resumeItem{Provided technical guidance and training to non-technical staff, creating documentation for integrated systems and procedures}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Portfolio Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{GalleryMD} $|$ \emph{Docker, Nginx, Security Architecture} $|$ \href{https://gallerymd.9river.online}{\underline{gallerymd.9river.online}}}{2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed secure document discovery system with remote gateway implementation demonstrating enterprise security patterns}
+            \resumeItem{Implemented production-grade deployment with reverse proxy configuration and automated content workflows}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{RecipeFlow} $|$ \emph{Data Engineering, Python, Algorithmic Logic}}{2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Engineered a data transformation pipeline to migrate static legacy datasets into dynamic, parameter-driven models, enabling algorithmic scaling of ingredients based on variables like altitude and production volume.}
+            \resumeItem{Architected a self-hosted storage solution (PostgreSQL/S3) to centrally manage unstructured rich media and relational data, ensuring long-term data accessibility and sovereignty.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{HeartsAndStars} $|$ \emph{Full-Stack Web Application}}{2025}
+          \resumeItemListStart
+            \resumeItem{Architected full-stack task management system using Python/Django and PostgreSQL on Proxmox platform, demonstrating rapid proof-of-concept development within secure infrastructure}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Competencies}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Enterprise Systems}{: Windchill PLM (17 years), Configuration Management, Data Governance, Lifecycle Management, Cross-functional Collaboration, Stakeholder Management} \\
+     \textbf{Cloud \& Infrastructure}{: AWS (Cloud Practitioner 11/2025), Azure, Terraform (cert in progress), Kubernetes (learning), Nginx, Linux (30 years)} \\
+     \textbf{Data \& Analytics}{: SQL, Excel (advanced automation), ETL workflows, Data quality management, Business Intelligence integration, Power BI (learning)} \\
+     \textbf{DevOps \& Automation}{: Git/GitHub, GitOps, CI/CD Pipelines, Infrastructure-as-Code, Bash/PowerShell Scripting, Monitoring (Uptime Kuma, Prometheus/Grafana)} \\
+     \textbf{Development Tools}{: VS Code, Python (learning), JavaScript, YAML/JSON, Database Design (PostgreSQL, SQLite)} \\
+     \textbf{Business Systems}{: Google Workspace, POS Systems, ERP/QuickBooks, Workflow Automation, System Integration} \\
+     \textbf{AI \& Emerging Tech}{: Ollama, Open WebUI, GitHub Copilot, LocalLLM, AI Workflow Automation}
+    }}
+ \end{itemize}
+
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications \& Professional Development}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Completed}{: AWS Certified Cloud Practitioner (November 2025)} \\
+     \textbf{In Progress}{: AWS Certified Developer – Associate, Microsoft Certified: Azure Developer Associate  (Target Q4 2025)} \\
+     \textbf{Planned}{: HashiCorp Terraform Associate (Q1 2026)}
+    }}
+ \end{itemize}
+
+
+%-----------SECURITY CLEARANCE-----------
+\section{Security Clearance Eligibility}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Canadian citizen with stable 22-year employment history. Prepared to begin enhanced security clearance process immediately upon offer. Comprehensive documentation (10+ years residence, employment, references) ready for expedited processing.
+    }}
+ \end{itemize}
+
+
+%-----------ADDITIONAL INFO-----------
+\section{Additional Information}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Location}{: Calgary, AB -- Available for hybrid or on-site work arrangements} \\
+     \textbf{Availability}{: Available Immediately — Open to Contract-to-Hire.}
+    }}
+ \end{itemize}
+
+\vfill
+
+%-------------------------------------------
+\end{document}

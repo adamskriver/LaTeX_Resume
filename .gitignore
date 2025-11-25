@@ -1,0 +1,19 @@
+# LaTeX build artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.xdv
+# *.pdf
+
+# IDE and editor files
+.DS_Store
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS-specific
+Thumbs.db
