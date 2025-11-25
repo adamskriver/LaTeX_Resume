@@ -2,6 +2,8 @@
 
 This folder contains a publicly shareable version of my resume, prepared for distribution on GitHub and to potential employers.
 
+📄 **[View Resume (PDF)](https://adamskriver.github.io/LaTeX_Resume/AdamSkriver_PublicResume.pdf)**
+
 ## Files
 
 - **AdamSkriver_PublicResume.tex** – LaTeX source file (the canonical resume document)
@@ -45,4 +47,4 @@ If you notice any formatting issues or have suggestions, feel free to open an is
 
 ---
 
-**Last Updated**: November 2024
+**Last Updated**: November 2025
